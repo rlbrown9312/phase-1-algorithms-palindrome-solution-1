@@ -1,6 +1,27 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+function isPalindrome(str) {
+  const regex = /[\W_]/g;
+  const smallStr = str.toLowerCase().replace(regex, "");
+  const reversed = smallStr.split("").reverse().join("");
+  return reversed === smallStr? true: false
+ }
+ 
+ const string = "abba___!!!"
+ 
+ console.log(isPalindrome(string))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
   Add your pseudocode here
